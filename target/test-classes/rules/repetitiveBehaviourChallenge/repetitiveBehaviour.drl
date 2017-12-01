@@ -7,7 +7,6 @@ import eu.trentorise.game.model.core.Notification;
 import eu.trentorise.game.notification.ChallengeCompletedNotication;
 
 import java.util.Date;
-import java.util.Calendar;
 
 global Utility utils;
 
@@ -18,27 +17,19 @@ function Double numberOfActivePeriods(PointConcept pc, Double target, String pNa
 	PeriodInstance pi = pc.getPeriodCurrentInstance(pName);
 	
 	if (pi == null){
+		System.out.println(pc.getName() + " NULL");
 		return activePeriods;
 	}
 	
-	//Calendar calendar = Calendar.getInstance();
 	
 	int i = pi.getIndex();
 	while ( (i >= 0) && (pi.getStart() > start) ) {	
 		pi = pc.getPeriodInstance(pName, i);
 		Double s = pi.getScore();
 		
-		/*
-		calendar.setTimeInMillis(pi.getStart());
-		String startS = calendar.get(Calendar.YEAR) + "\\" + calendar.get(Calendar.MONTH) +
-						"\\" + calendar.get(Calendar.DAY_OF_MONTH);
-		calendar.setTimeInMillis(pi.getEnd());
-		String endS = calendar.get(Calendar.YEAR) + "\\" + calendar.get(Calendar.MONTH) +
-						"\\" + calendar.get(Calendar.DAY_OF_MONTH);
-		System.out.println("SCORE " + i + " " + s + ", date =" + startS + "-" + endS);
-		*/ 
-		
-		if(s > target)
+		System.out.println(pi);
+
+		if(s >= target)
 			activePeriods++;
 		i--;	
 	}
@@ -73,14 +64,14 @@ rule "repetitiveBehaviour"
         // assign bonus
 		//How are the point bounded to the player???
 		if ($bonusScore instanceof Long) {
-		     $pc.setScore($pc.getScore() + (Long)$bonusScore );
+		     $pcBonus.setScore($pcBonus.getScore() + (Long)$bonusScore );
 		} else if ($bonusScore instanceof Integer) {
-		     $pc.setScore($pc.getScore() + (Integer)$bonusScore );
+		     $pcBonus.setScore($pcBonus.getScore() + (Integer)$bonusScore );
 		} else {
-		   $pc.setScore($pc.getScore() +  (Double)$bonusScore );
+		   $pcBonus.setScore($pcBonus.getScore() +  (Double)$bonusScore );
 		}
 		
-		update($pc);
+		update($pcBonus);
 		update($c);
         
         //System notification ??
