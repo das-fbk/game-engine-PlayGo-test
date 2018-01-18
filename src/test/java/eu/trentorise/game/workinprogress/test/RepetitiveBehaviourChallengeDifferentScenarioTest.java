@@ -18,7 +18,7 @@ import eu.trentorise.game.model.core.GameConcept;
 import eu.trentorise.game.services.GameService;
 import eu.trentorise.game.services.PlayerService;
 import eu.trentorise.game.test.GameTest;
-
+ 
 public class RepetitiveBehaviourChallengeDifferentScenarioTest extends GameTest{
 
 	private static final String GAME = "repetitiveBehaviourChallenge";

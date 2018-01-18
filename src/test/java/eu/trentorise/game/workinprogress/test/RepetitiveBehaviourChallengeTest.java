@@ -27,7 +27,7 @@ public class RepetitiveBehaviourChallengeTest extends GameTest{
 	
 	@Autowired
 	private GameService gameSrv;
-
+  
 	@Autowired
 	private PlayerService playerSrv;
 

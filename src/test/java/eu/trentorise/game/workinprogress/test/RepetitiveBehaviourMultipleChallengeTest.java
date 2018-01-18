@@ -22,7 +22,7 @@ public class RepetitiveBehaviourMultipleChallengeTest extends GameTest{
 	private static final String GAME = "repetitiveBehaviourChallenge";
 	private static final String ACTION = "save_itinerary";
 	private static final String PLAYER = "Hermione Granger";
-	
+	 
 	@Autowired
 	private GameService gameSrv;
 

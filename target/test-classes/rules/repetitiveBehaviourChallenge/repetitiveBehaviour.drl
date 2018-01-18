@@ -49,7 +49,7 @@ function Double numberOfActivePeriods(PointConcept pc, Double target, String pNa
 
 rule "repetitiveBehaviour"
 	salience -2000
-    when
+    when 
     	//checking if it's the right challenge and if it's not completed
         $c: ChallengeConcept( modelName == 'repetitiveBehaviour',
         					  $counter: fields['counterName'],
