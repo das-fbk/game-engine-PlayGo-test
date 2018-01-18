@@ -3,3 +3,31 @@ INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 05151373-969b-4a40-9ea3
 INFO - "repetitiveBehaviourChallenge" "Hermione Granger" d1bd08b7-7565-4cf2-858b-9f531e10bc9e 1516285320596 1516285320596 type=ChallengeAssigned name="repetitiveBehaviourInstance2" startDate=1516112520291 endDate=1516371720291
 INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 082702dc-e3dd-4e62-866c-3aa373c7d409 1516285320596 1516285320619 type=Action actionName="save_itinerary"
 INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 082702dc-e3dd-4e62-866c-3aa373c7d409 1516285322550 1516285322550 type=EndGameAction
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" df85cc54-15bd-46e6-9e4c-e5808513ea1e 1516286628582 1516286628582 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516113828313 endDate=1516373028313
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" fe2a568f-4c0d-4d84-a5e0-026fa558198a 1516286628632 1516286628632 type=ChallengeAssigned name="repetitiveBehaviourInstance2" startDate=1516113828313 endDate=1516373028313
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 27cd3403-04f6-46e1-a21b-6db08b55dd74 1516286628633 1516286628658 type=Action actionName="save_itinerary"
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 27cd3403-04f6-46e1-a21b-6db08b55dd74 1516286630616 1516286630616 type=EndGameAction
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" a7e1348c-c615-4720-92e1-79fcf29363db 1516286643045 1516286643045 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516113842783 endDate=1516373042783
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 6170f15e-d309-4300-8719-d98c22fdd3e2 1516286643092 1516286643092 type=ChallengeAssigned name="repetitiveBehaviourInstance2" startDate=1516113842783 endDate=1516373042783
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 902869ad-8568-40d5-a331-4d1152e57eed 1516286643093 1516286643112 type=Action actionName="save_itinerary"
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 902869ad-8568-40d5-a331-4d1152e57eed 1516286645182 1516286645182 type=EndGameAction
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 48b849b7-13dc-4586-a398-4a8cf0071705 1516286942319 1516286942319 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516114142042 endDate=1516373342042
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 13eea472-5fd6-4b70-bfc3-5ca6bfd19a4b 1516286942366 1516286942366 type=ChallengeAssigned name="repetitiveBehaviourInstance2" startDate=1516114142042 endDate=1516373342042
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" e90440fe-13a1-4613-bade-bcf115d38ea2 1516286942366 1516286942396 type=Action actionName="save_itinerary"
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" e90440fe-13a1-4613-bade-bcf115d38ea2 1516286942366 1516286944287 type=PointConcept ruleName="repetitiveBehaviour" name="green leaves" deltaScore=50.0 score=90.0
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" e90440fe-13a1-4613-bade-bcf115d38ea2 1516286942366 1516286944293 type=PointConcept ruleName="repetitiveBehaviour" name="green leaves" deltaScore=100.0 score=190.0
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" e90440fe-13a1-4613-bade-bcf115d38ea2 1516286944303 1516286944303 type=ChallengeCompleted name="repetitiveBehaviourInstance2" completed
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" e90440fe-13a1-4613-bade-bcf115d38ea2 1516286944305 1516286944305 type=ChallengeCompleted name="repetitiveBehaviourInstance" completed
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" e90440fe-13a1-4613-bade-bcf115d38ea2 1516286944339 1516286944339 type=EndGameAction
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 49e92b7f-b472-4998-b1d3-4818096e618a 1516287338174 1516287338174 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516114537916 endDate=1516373737916
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 45a32be1-cb3b-486b-ae55-b48d0edcd39e 1516287338220 1516287338220 type=ChallengeAssigned name="repetitiveBehaviourInstance2" startDate=1516114537916 endDate=1516373737916
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" b694ce07-bf09-4a2a-bae5-b06c907e57d4 1516287338221 1516287338242 type=Action actionName="save_itinerary"
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" b694ce07-bf09-4a2a-bae5-b06c907e57d4 1516287338221 1516287340135 type=PointConcept ruleName="repetitiveBehaviour" name="green leaves" deltaScore=100.0 score=140.0
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" b694ce07-bf09-4a2a-bae5-b06c907e57d4 1516287338221 1516287340139 type=PointConcept ruleName="repetitiveBehaviour" name="green leaves" deltaScore=50.0 score=190.0
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" b694ce07-bf09-4a2a-bae5-b06c907e57d4 1516287340150 1516287340150 type=ChallengeCompleted name="repetitiveBehaviourInstance" completed
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" b694ce07-bf09-4a2a-bae5-b06c907e57d4 1516287340153 1516287340153 type=ChallengeCompleted name="repetitiveBehaviourInstance2" completed
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" b694ce07-bf09-4a2a-bae5-b06c907e57d4 1516287340186 1516287340186 type=EndGameAction
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 36883e6d-f85a-4471-a766-7bd40197595c 1516287769026 1516287769026 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516114968737 endDate=1516374168737
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 8cf926e4-c1ca-48b0-86f2-5a102038b39b 1516287769157 1516287769157 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516114968737 endDate=1516374168737
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 66dcdd25-2add-49e4-991b-ef0f1480b66a 1516287769258 1516287769285 type=Action actionName="save_itinerary"
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 66dcdd25-2add-49e4-991b-ef0f1480b66a 1516287771428 1516287771428 type=EndGameAction

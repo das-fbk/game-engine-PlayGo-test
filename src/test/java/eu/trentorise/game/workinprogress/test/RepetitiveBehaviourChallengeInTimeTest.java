@@ -12,7 +12,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import org.junit.Before;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+
 import eu.trentorise.game.model.ChallengeModel;
 import eu.trentorise.game.model.PointConcept;
 import eu.trentorise.game.model.PointConceptStateHelperFactory;
@@ -38,6 +41,15 @@ public class RepetitiveBehaviourChallengeInTimeTest extends GameTest{
     private PointConceptStateHelperFactory helperFactory;
 
 	private double score = 0;
+	
+	@Autowired
+	private MongoTemplate mongo;
+
+	@Before
+    public final void cleanDBChalleng() {
+        // clean mongo
+        mongo.getDb().dropDatabase();
+    }
 	
 	@Override
 	public void initEnv() {

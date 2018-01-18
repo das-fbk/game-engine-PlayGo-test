@@ -9,7 +9,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
+import org.junit.Before;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+
 import eu.trentorise.game.model.ChallengeModel;
 import eu.trentorise.game.model.PointConcept;
 import eu.trentorise.game.model.core.GameConcept;
@@ -28,6 +31,15 @@ public class RepetitiveBehaviourMultipleChallengeTest extends GameTest{
 
 	@Autowired
 	private PlayerService playerSrv;
+	
+	@Autowired
+	private MongoTemplate mongo;
+
+	@Before
+    public final void cleanDBChalleng() {
+        // clean mongo
+        mongo.getDb().dropDatabase();
+    }
 
 	@Override
 	public void initEnv() {
