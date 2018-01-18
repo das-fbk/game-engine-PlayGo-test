@@ -1,0 +1,5 @@
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 9ab29f04-38a4-481f-b3a0-bf9390df1ed7 1516285290971 1516285290971 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516112490733 endDate=1516371690733
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 05151373-969b-4a40-9ea3-2f87a15726cd 1516285320545 1516285320545 type=ChallengeAssigned name="repetitiveBehaviourInstance" startDate=1516112520291 endDate=1516371720291
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" d1bd08b7-7565-4cf2-858b-9f531e10bc9e 1516285320596 1516285320596 type=ChallengeAssigned name="repetitiveBehaviourInstance2" startDate=1516112520291 endDate=1516371720291
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 082702dc-e3dd-4e62-866c-3aa373c7d409 1516285320596 1516285320619 type=Action actionName="save_itinerary"
+INFO - "repetitiveBehaviourChallenge" "Hermione Granger" 082702dc-e3dd-4e62-866c-3aa373c7d409 1516285322550 1516285322550 type=EndGameAction

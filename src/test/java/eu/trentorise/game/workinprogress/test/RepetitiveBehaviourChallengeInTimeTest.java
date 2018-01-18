@@ -76,7 +76,7 @@ public class RepetitiveBehaviourChallengeInTimeTest extends GameTest{
 		// assign a challenge to PLAYER
 		Map<String, Object> data = new HashMap<String, Object>();
 		data.put("target", c1Target); //min #greanleaves to consider the day active
-		data.put("counter", "green leaves");
+		data.put("counterName", "green leaves");
 		data.put("periodName", "daily");
 		data.put("periodTarget", periodTarget1); //min #days active to win the challenge
 		data.put("bonusScore", bonus1);
@@ -88,7 +88,7 @@ public class RepetitiveBehaviourChallengeInTimeTest extends GameTest{
 		//assign another challenge
 		data = new HashMap<String, Object>();
 		data.put("target", c2Target); //min #greanleaves to consider the day active
-		data.put("counter", "green leaves");
+		data.put("counterName", "green leaves");
 		data.put("periodName", "daily");
 		data.put("periodTarget", periodTarget2); //min #days active to win the challenge
 		data.put("bonusScore", bonus2);
@@ -124,7 +124,7 @@ public class RepetitiveBehaviourChallengeInTimeTest extends GameTest{
 		model.setName("repetitiveBehaviour");
 		model.setVariables(new HashSet<String>());
 		model.getVariables().add("target");
-		model.getVariables().add("counter");
+		model.getVariables().add("counterName");
 		model.getVariables().add("periodTarget");
 		model.getVariables().add("periodName");
 		model.getVariables().add("bonusScore");

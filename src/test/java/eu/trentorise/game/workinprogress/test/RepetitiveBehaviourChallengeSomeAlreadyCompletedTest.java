@@ -60,7 +60,7 @@ public class RepetitiveBehaviourChallengeSomeAlreadyCompletedTest extends GameTe
 		// assign a challenge to PLAYER
 		Map<String, Object> data = new HashMap<String, Object>();
 		data.put("target", 1d); //min #greanleaves to consider the day active
-		data.put("counter", "green leaves");
+		data.put("counterName", "green leaves");
 		data.put("periodName", "daily");
 		data.put("periodTarget", 1d); //min #days active to win the challenge
 		data.put("bonusScore", 100d);
@@ -73,7 +73,7 @@ public class RepetitiveBehaviourChallengeSomeAlreadyCompletedTest extends GameTe
 		//assign another challenge to PLAYER - completed
 		data = new HashMap<String, Object>();
 		data.put("target", 10d); //min #greanleaves to consider the day active
-		data.put("counter", "green leaves");
+		data.put("counterName", "green leaves");
 		data.put("periodName", "daily");
 		data.put("periodTarget", 1d); //min #days active to win the challenge
 		data.put("bonusScore", 200d);
@@ -101,7 +101,7 @@ public class RepetitiveBehaviourChallengeSomeAlreadyCompletedTest extends GameTe
 		model.setName("repetitiveBehaviour");
 		model.setVariables(new HashSet<String>());
 		model.getVariables().add("target");
-		model.getVariables().add("counter");
+		model.getVariables().add("counterName");
 		model.getVariables().add("periodTarget");
 		model.getVariables().add("periodName");
 		model.getVariables().add("bonusScore");

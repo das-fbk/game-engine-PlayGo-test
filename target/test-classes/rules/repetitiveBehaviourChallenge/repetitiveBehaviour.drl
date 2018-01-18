@@ -7,6 +7,7 @@ import eu.trentorise.game.model.core.Notification;
 import eu.trentorise.game.notification.ChallengeCompletedNotication;
 
 import java.util.Date;
+import java.util.Calendar;
 
 global Utility utils;
 
@@ -17,18 +18,27 @@ function Double numberOfActivePeriods(PointConcept pc, Double target, String pNa
 	PeriodInstance pi = pc.getPeriodCurrentInstance(pName);
 	
 	if (pi == null){
-		System.out.println(pc.getName() + " NULL");
+		//System.out.println(pc.getName() + " NULL");
 		return activePeriods;
 	}
 	
+	//Calendar calendar = Calendar.getInstance();
 	
 	int i = pi.getIndex();
-	while ( (i >= 0) && (pi.getStart() > start) ) {	
+	while ( (i >= 0) && (pi.getStart() >= start) ) {	
 		pi = pc.getPeriodInstance(pName, i);
 		Double s = pi.getScore();
 		
-		System.out.println(pi);
-
+		/*
+		calendar.setTimeInMillis(pi.getStart());
+		String startS = calendar.get(Calendar.YEAR) + "\\" + calendar.get(Calendar.MONTH) +
+						"\\" + calendar.get(Calendar.DAY_OF_MONTH);
+		calendar.setTimeInMillis(pi.getEnd());
+		String endS = calendar.get(Calendar.YEAR) + "\\" + calendar.get(Calendar.MONTH) +
+						"\\" + calendar.get(Calendar.DAY_OF_MONTH);
+		System.out.println(pc.getName() + " SCORE " + i + " " + s + ", date =" + startS + "-" + endS);
+		*/ 
+		
 		if(s >= target)
 			activePeriods++;
 		i--;	
@@ -42,7 +52,7 @@ rule "repetitiveBehaviour"
     when
     	//checking if it's the right challenge and if it's not completed
         $c: ChallengeConcept( modelName == 'repetitiveBehaviour',
-        					  $counter: fields['counter'],
+        					  $counter: fields['counterName'],
         					  $target: fields['target'],
         					  $period: fields['periodName'],
         					  $periodTarget: fields['periodTarget'],
